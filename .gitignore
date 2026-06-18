@@ -1,0 +1,29 @@
+# Local/private routine configuration
+config.local.md
+config.private.md
+*.local.md
+*.private.md
+
+# Generated reports / state
+reports/
+state/
+*.html
+*.json
+
+# Secrets and env files
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.token
+secrets.*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

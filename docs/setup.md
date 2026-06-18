@@ -23,7 +23,7 @@ Put private context in one of these places:
 - a private fork;
 - a local ignored file such as `config.local.md`.
 
-Use `config.example.md` as a template.
+Use `briefing/user-context.example.md` and `briefing/config.example.json` as templates.
 
 ## 3. Create the daily routine
 

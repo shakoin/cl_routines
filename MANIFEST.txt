@@ -5,7 +5,6 @@ Top-level files:
 - CLAUDE.md
 - MANIFEST.txt
 - .gitignore
-- config.example.md
 
 Briefing templates:
 - briefing/config.example.json
@@ -27,7 +26,6 @@ Routine prompts:
 Docs:
 - docs/setup.md
 - docs/public-safety.md
-- docs/repo-create-steps.md
 
 Public safety:
 - This repo should stay generic.

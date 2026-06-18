@@ -6,12 +6,16 @@
   "watchlists": {
     "stack": [],
     "hardware": [],
-    "models": [],
+    "models": {
+      "current_delegate": "",
+      "target_tasks": ["summarize", "classify", "triage"]
+    },
     "news": ["cybersecurity", "technology", "macro"]
   },
   "thresholds": {
     "hardware": []
   },
+  "feedback_rules": [],
   "delivery": {
     "google_drive": true
   }

@@ -12,11 +12,14 @@ This repository is designed to be generic. Keep personal details, private infras
 .claude/skills/source-triage/SKILL.md
 .claude/skills/daily-tech-scout/SKILL.md
 .claude/skills/weekly-tech-deep-sweep/SKILL.md
+briefing/config.example.json
+briefing/user-context.example.md
 routines/daily-tech-scout.prompt.md
+routines/daily-tech-scout.json
 routines/weekly-tech-deep-sweep.prompt.md
+routines/weekly-tech-deep-sweep.json
 docs/setup.md
 docs/public-safety.md
-config.example.md
 ```
 
 ## Intended use
@@ -39,7 +42,7 @@ Do not hardcode personal context in this repo if it is public. Put private detai
 - the Claude Routine UI prompt,
 - a private Google Drive config document,
 - a private repo fork,
-- a local ignored config file based on `config.example.md`.
+- a local ignored config file based on `briefing/config.example.json` and `briefing/user-context.example.md`.
 
 Private details can include:
 

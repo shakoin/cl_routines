@@ -1,0 +1,28 @@
+Claude Routine Template Manifest
+
+Top-level files:
+- README.md
+- CLAUDE.md
+- MANIFEST.txt
+- .gitignore
+- config.example.md
+
+Skills:
+- .claude/skills/ponytail-caveman/SKILL.md
+- .claude/skills/routine-state/SKILL.md
+- .claude/skills/source-triage/SKILL.md
+- .claude/skills/daily-tech-scout/SKILL.md
+- .claude/skills/weekly-tech-deep-sweep/SKILL.md
+
+Routine prompts:
+- routines/daily-tech-scout.prompt.md
+- routines/weekly-tech-deep-sweep.prompt.md
+
+Docs:
+- docs/setup.md
+- docs/public-safety.md
+- docs/repo-create-steps.md
+
+Public safety:
+- This repo should stay generic.
+- Store private details in the Claude Routine UI prompt, private Drive docs, or private forks.

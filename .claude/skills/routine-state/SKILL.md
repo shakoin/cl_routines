@@ -56,6 +56,14 @@ Classify candidate items as:
 
 Do not repeat an item unless it changed.
 
+## Deduplication rule
+
+Report only new, updated, or resolved items.
+
+Suppress `repeated/no change` watch items — count them in `State / Failures` instead of restating them.
+
+If a watch item has not changed in 7+ days, move it to `next_check` and drop it from the body.
+
 ## Public safety
 
 Do not commit real private state output to a public repo. Keep real state in generated reports or private storage.

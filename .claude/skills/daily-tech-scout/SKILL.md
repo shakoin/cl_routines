@@ -18,6 +18,17 @@ Answer:
 3. Did any source fail?
 4. What should carry forward?
 
+## Execution stages
+
+Run in this order:
+
+1. Load prior state block.
+2. First-pass source check (quiet scout mode).
+3. Escalate only if an S2/S3 trigger appears.
+4. Write compact report — omit or collapse empty sections.
+5. Save to configured report destination.
+6. Save state block.
+
 ## Default mode
 
 Start in quiet scout mode.
@@ -43,6 +54,12 @@ Use these sections:
 - Each section: max 3 bullets.
 - Hardware / Model Watch: max 4 rows.
 - State / Failures: max 6 lines.
+
+## Empty section rule
+
+If a section has no S1/S2/S3 item and no source failure, omit it entirely or collapse it to one quiet line.
+
+If all sections are quiet, produce a short all-clear report instead of the full structure.
 
 ## Quiet default lines
 

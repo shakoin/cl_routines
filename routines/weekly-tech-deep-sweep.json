@@ -1,0 +1,14 @@
+{
+  "name": "weekly-tech-deep-sweep",
+  "title": "Weekly Tech Deep Sweep",
+  "description": "Bounded weekly deep sweep covering stack changes, model candidates, infrastructure, and watchlist cleanup.",
+  "category": "reporting",
+  "trigger": {
+    "type": "schedule",
+    "frequency": "weekly"
+  },
+  "recommended_schedule": "Weekly on Monday morning",
+  "connectors": ["google-drive"],
+  "prompt_file": "routines/weekly-tech-deep-sweep.prompt.md",
+  "tags": ["weekly", "deep-sweep", "security", "ai", "infrastructure", "watchlist"]
+}

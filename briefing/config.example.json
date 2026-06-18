@@ -1,0 +1,18 @@
+{
+  "report": {
+    "drive_folder": "Tech Digests",
+    "timezone": "America/New_York"
+  },
+  "watchlists": {
+    "stack": [],
+    "hardware": [],
+    "models": [],
+    "news": ["cybersecurity", "technology", "macro"]
+  },
+  "thresholds": {
+    "hardware": []
+  },
+  "delivery": {
+    "google_drive": true
+  }
+}

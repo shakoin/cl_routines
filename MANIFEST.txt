@@ -7,6 +7,10 @@ Top-level files:
 - .gitignore
 - config.example.md
 
+Briefing templates:
+- briefing/config.example.json
+- briefing/user-context.example.md
+
 Skills:
 - .claude/skills/ponytail-caveman/SKILL.md
 - .claude/skills/routine-state/SKILL.md
@@ -16,7 +20,9 @@ Skills:
 
 Routine prompts:
 - routines/daily-tech-scout.prompt.md
+- routines/daily-tech-scout.json
 - routines/weekly-tech-deep-sweep.prompt.md
+- routines/weekly-tech-deep-sweep.json
 
 Docs:
 - docs/setup.md

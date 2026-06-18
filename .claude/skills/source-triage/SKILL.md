@@ -47,6 +47,21 @@ Escalate only when an item may affect:
 - a major macro or market signal;
 - a prior unresolved watch item.
 
+## Retry rule
+
+On source fetch failure:
+
+1. Retry once.
+2. If still failed, record a partial failure (source name, stage, whether report is still usable, whether tomorrow should retry).
+3. Continue the report — do not abort.
+4. Do not mark the beat as quiet.
+
+## Partial failure format
+
+```
+PARTIAL FAILURE — [source] failed at [stage]. Report usable: yes/no. Retry tomorrow: yes/no.
+```
+
 ## Failure rule
 
 Never write `No notable updates` for a beat if the main source failed. Write a short failure note instead.

@@ -10,6 +10,10 @@ state/
 *.html
 *.json
 
+# Allow tracked template and metadata JSON
+!briefing/*.json
+!routines/*.json
+
 # Secrets and env files
 .env
 .env.*

@@ -1,0 +1,14 @@
+{
+  "name": "daily-tech-scout",
+  "title": "Daily Tech Scout",
+  "description": "Low-usage daily decision brief for stack, security, AI, macro, and hardware watch items.",
+  "category": "reporting",
+  "trigger": {
+    "type": "schedule",
+    "frequency": "daily"
+  },
+  "recommended_schedule": "Daily at 7:15am",
+  "connectors": ["google-drive"],
+  "prompt_file": "routines/daily-tech-scout.prompt.md",
+  "tags": ["daily", "briefing", "security", "ai", "markets"]
+}

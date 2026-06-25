@@ -69,3 +69,33 @@ Never write `No notable updates` for a beat if the main source failed. Write a s
 ## Search rule
 
 Prefer primary fetches. Use broad web search only when a trigger exists or a primary source is unavailable.
+
+## Primary source registry
+
+Fetch-first rule: for any configured beat, fetch the canonical primary source DIRECTLY (WebFetch) before running a broad WebSearch. Web search is for discovery/confirmation, not as the default source. A direct fetch of an authoritative page beats search-result luck on recall and accuracy.
+
+Use these canonical primaries when the beat applies. Treat each as `primary` evidence.
+
+### Security / CVE
+- CISA Known Exploited Vulnerabilities — page `https://www.cisa.gov/known-exploited-vulnerabilities-catalog`; JSON feed `https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json` (diff against prior state's KEV list).
+- NVD `https://nvd.nist.gov/vuln/search`; GitHub Security Advisories `https://github.com/advisories`.
+- Vendor security/status pages for any affected product (fetch the vendor's own advisory before secondary reporting).
+
+### Macro / markets
+- FRED `https://fred.stlouisfed.org` (series pages for 10Y/2Y, DXY, etc.); US Treasury `https://home.treasury.gov/resource-center/data-chart-center/interest-rates`.
+- Federal Reserve `https://www.federalreserve.gov`; BLS `https://www.bls.gov`; CME FedWatch for rate-path expectations.
+
+### AI / developer tools
+- Official vendor blog / changelog / release notes pages (fetch the changelog directly, not a news rewrite).
+
+### Homelab stack (public OSS — release/security pages)
+Fetch the relevant component's release page directly when it is on the configured stack watchlist:
+- Proxmox VE roadmap/release `https://pve.proxmox.com/wiki/Roadmap`
+- Plex release notes `https://forums.plex.tv/t/plex-media-server/30447`
+- Sonarr / Radarr / Prowlarr / Bazarr — GitHub releases (`https://github.com/<project>/<project>/releases`)
+- FileFlows `https://fileflows.com/docs/versions`
+- Pi-hole / FTL — GitHub releases (`https://github.com/pi-hole/*/releases`)
+- gluetun — GitHub releases (`https://github.com/qdm12/gluetun/releases`)
+- Omada / TP-Link firmware — official download/firmware page for the specific model.
+
+Registry rule: if a primary fetch fails, apply the Retry rule and record a partial failure for that beat — do not silently fall back to search and label the beat quiet.
